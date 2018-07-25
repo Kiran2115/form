@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+       crossorigin="anonymous">
+
+    {% block head %}
+    <meta >
+    <title></title>
+    {% endblock %}
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class="container">
+       <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">social network</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+         <ul class="nav navbar-nav navbar-right">
+
+            <li><a href="/account/register/">Register</a></li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </div>
+
+
+
+
+    {% block body %}
+    <h1>bse</h1>
+
+    {% endblock %}
+
+  </body>
+</html>
