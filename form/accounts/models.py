@@ -6,7 +6,7 @@ from django.db.models.signals import post_save
 
 # Create your models here.
 class Userprofile(models.Model):
-    user =  models.OneToOneField(User)
+    user =  models.OneToOneField(User, on_delete=models.CASCADE)
     description = models.CharField(max_length = 100,default='')
     city = models.CharField(max_length = 100,default='')
     website = models.URLField(default='')
